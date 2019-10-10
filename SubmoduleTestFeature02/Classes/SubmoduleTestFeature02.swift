@@ -10,7 +10,7 @@ import SubmoduleTestFeature01
 
 public class SubmoduleTestFeature02 {
     public static func helloWorld() -> String {
-        return "hello SubmoduleTestFeature02"
+        return "hello SubmoduleTestFeature02 v0.3"
     }
     
     public static func helloWorldFromFeature01() -> String {
