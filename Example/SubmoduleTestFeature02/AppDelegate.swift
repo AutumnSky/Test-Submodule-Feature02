@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SubmoduleTestFeature02
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print(SubmoduleTestFeature02.helloWorld())
+        
+        let bundleURL = Bundle(for: SubmoduleTestFeature02_ViewController01.self)
+            .bundleURL
+            .appendingPathComponent("SubmoduleTestFeature02.bundle")
+        
+        let bundle = Bundle(url: bundleURL)
+        
+        let rootViewController = SubmoduleTestFeature02_ViewController01(nibName: String(describing: SubmoduleTestFeature02_ViewController01.self),
+                                                                         bundle: bundle)
+
+        if let window = self.window{
+               window.rootViewController = rootViewController
+        }
+        
         return true
     }
 
