@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         print(SubmoduleTestFeature02.helloWorld())
+        print(SubmoduleTestFeature02.helloWorldFromFeature01())
+        print(SubmoduleTestFeature02.helloWorldFromCoreOfFeature01())
         
         let bundleURL = Bundle(for: SubmoduleTestFeature02_ViewController01.self)
             .bundleURL

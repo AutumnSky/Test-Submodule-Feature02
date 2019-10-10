@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SubmoduleTestFeature02'
-  s.version          = '0.1'
+  s.version          = '0.2'
   s.summary          = 'SubmoduleTestFeature02'
 
 # This description is used to generate tags and improve search results.
@@ -40,4 +40,5 @@ SubmoduleTestFeature02 for submodule testing
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SubmoduleTestFeature01', '~> 0.5'
 end

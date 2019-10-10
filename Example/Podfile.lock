@@ -11,7 +11,11 @@ PODS:
     - FBSnapshotTestCase (~> 2.0)
     - Nimble (~> 7.0)
   - Quick (1.2.0)
-  - SubmoduleTestFeature02 (0.1)
+  - SubmoduleTestCore (0.2)
+  - SubmoduleTestFeature01 (0.5):
+    - SubmoduleTestCore (~> 0.2)
+  - SubmoduleTestFeature02 (0.1):
+    - SubmoduleTestFeature01 (~> 0.5)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -26,6 +30,8 @@ SPEC REPOS:
     - Nimble
     - Nimble-Snapshots
     - Quick
+    - SubmoduleTestCore
+    - SubmoduleTestFeature01
 
 EXTERNAL SOURCES:
   SubmoduleTestFeature02:
@@ -36,7 +42,9 @@ SPEC CHECKSUMS:
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  SubmoduleTestFeature02: 137a675a1c601c65c9e62102378255041a48b396
+  SubmoduleTestCore: d081e6a40f0bcd004e38563379554bd2e2c6b8cf
+  SubmoduleTestFeature01: bed424e0f4a53b8557cfa980974a509c46781508
+  SubmoduleTestFeature02: 3564a305026882841551e46d5b51cea9a35f881f
 
 PODFILE CHECKSUM: 57cb0c6935b29a3636c0149ca0ae79b530036722
 
